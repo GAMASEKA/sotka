@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 55px 160px 0 160px;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+    color: #000;
+    font-family: Lora;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+}
+
+.title::after {
+    position: absolute;
+    content: "";
+    width: 278px;
+    height: 23px;
+    top: 50px;
+    right: 418px;
+    background-image: url("Rose.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.services__block {
+    display:flex;
+    margin-bottom: 108px;
+}
+
+.services__article {
+    margin-right: 63px;
+}
+
+.services__article:last-child {
+    margin-right: 0;
+}
+
+.services__content {
+    /* position: relative; */
+    display: flex;
+    max-width: 330px;
+    min-height: 400px;
+    padding-left: 30px;
+    padding-top: 325px;    
+    flex-direction: column-reverse;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 330px 400px;
+}
+
+.services__descr {
+    /* position: absolute; */
+    /* margin-left: 30px; */
+    bottom: -40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    min-height: 145px;
+    padding: 20px 15px;
+    background-color: #FFF;
+}
+
+.services__content_bg1 {
+    background-image: url("img1.jpg");
+}
+
+.services__content_bg2 {
+    background-image: url("img2.jpg");
+}
+
+.services__content_bg3 {
+    background-image: url("img3.jpg");
+}
+
+.services__title {
+    color: #000;
+    font-family: Lora;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.services__paragraph {
+    margin-bottom: auto;
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+}
+
+.services__link {
+    position: relative;
+    text-decoration: none;
+    text-align: end;
+    color: #EC5598;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 100% */
+    letter-spacing: -0.16px;
+}
+
+.services__link::after {
+    position: absolute;
+    content: "";
+    background-color: #EC5598;
+    width: 46px;
+    height: 1px;
+    top: 6px;
+    left: 135px;
+}
+
+.services__btn {
+    margin: 0 auto;
+    padding: 18px 47px;
+    background-color: #fff;
+    border: 1px solid #FF427F;
+    color: #FF427F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.08px;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 360px) {
+    body {
+        padding: 15px;
+    }
+
+    .services__block {
+        flex-direction: column;
+    }
+
+    .title {
+        color: #000;
+        font-family: Lora;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 48px; /* 171.429% */
+        letter-spacing: 0.84px;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+    }
+
+
+    .services__block {
+        margin-bottom: 40px;
+    }
+
+    .title::after {
+        width: 198px;
+        top: 40px;
+        right: 67px;
+    }
+
+    .services__article {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .services__article:last-child {
+        margin-bottom: 0;
+    }
+
+    .services__content {
+        padding-left: 0;
+        padding-right: 30px;
+        padding-top: 305px;
+
+    }
+    .services__content_bg1 {
+        background-image: url("2img360.jpg");
+    }
+
+    .services__content_bg2 {
+        background-image: url("1img360.jpg");
+    }
+
+    .services__content_bg3 {
+        background-image: url("3img360.jpg");
+    }
+
+    .services__article_order {
+        order: -1;
+    }
+
+
+}
